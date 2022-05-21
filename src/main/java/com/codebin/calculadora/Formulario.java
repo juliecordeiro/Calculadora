@@ -54,8 +54,10 @@ public class Formulario extends javax.swing.JFrame {
         jButton22.setText("jButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(195, 232, 212));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        txtResultado.setBackground(new java.awt.Color(195, 232, 212));
         txtResultado.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         txtResultado.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         txtResultado.addActionListener(new java.awt.event.ActionListener() {
@@ -141,21 +143,36 @@ public class Formulario extends javax.swing.JFrame {
             }
         });
 
+        C.setBackground(new java.awt.Color(247, 102, 92));
         C.setText("C");
+        C.setToolTipText("");
+        C.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.darkGray, java.awt.Color.darkGray));
+        C.setBorderPainted(false);
         C.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CActionPerformed(evt);
             }
         });
+        C.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                CKeyPressed(evt);
+            }
+        });
 
+        CE.setBackground(new java.awt.Color(92, 146, 247));
         CE.setText("CE");
+        CE.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.darkGray, java.awt.Color.darkGray));
+        CE.setBorderPainted(false);
         CE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CEActionPerformed(evt);
             }
         });
 
+        sum.setBackground(new java.awt.Color(53, 252, 83));
         sum.setText("+");
+        sum.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.darkGray, java.awt.Color.darkGray));
+        sum.setBorderPainted(false);
         sum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sumActionPerformed(evt);
@@ -176,7 +193,11 @@ public class Formulario extends javax.swing.JFrame {
             }
         });
 
+        igual.setBackground(new java.awt.Color(245, 218, 113));
+        igual.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         igual.setText("=");
+        igual.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.darkGray, java.awt.Color.darkGray));
+        igual.setBorderPainted(false);
         igual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 igualActionPerformed(evt);
@@ -381,6 +402,10 @@ public class Formulario extends javax.swing.JFrame {
         valor2 = null;
         txtResultado.setText("");
     }//GEN-LAST:event_CActionPerformed
+
+    private void CKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CKeyPressed
 
     /**
      * @param args the command line arguments
