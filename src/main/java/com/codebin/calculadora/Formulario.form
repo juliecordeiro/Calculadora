@@ -39,7 +39,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="txtResultado" max="32767" attributes="0"/>
+                  <Component id="txtResultado" alignment="1" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
@@ -102,9 +102,9 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace pref="22" max="32767" attributes="0"/>
-              <Component id="txtResultado" min="-2" pref="100" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Component id="txtResultado" min="-2" pref="61" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="sete" alignment="3" min="-2" pref="65" max="-2" attributes="0"/>
                   <Component id="nov" alignment="3" min="-2" pref="65" max="-2" attributes="0"/>
@@ -122,7 +122,7 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="um" alignment="3" min="-2" pref="65" max="-2" attributes="0"/>
                           <Component id="tres" alignment="3" min="-2" pref="65" max="-2" attributes="0"/>
@@ -136,9 +136,9 @@
                           <Component id="div" alignment="3" min="-2" pref="65" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="igual" max="32767" attributes="0"/>
+                  <Component id="igual" min="-2" pref="136" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <EmptySpace pref="26" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
