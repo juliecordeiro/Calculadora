@@ -17,6 +17,10 @@ public class Formulario extends javax.swing.JFrame {
         initComponents();
     }
 
+
+    Double valor1, valor2;
+    String sinal;
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,17 +32,17 @@ public class Formulario extends javax.swing.JFrame {
 
         jButton22 = new javax.swing.JButton();
         txtResultado = new javax.swing.JTextField();
-        sete = new javax.swing.JButton();
-        nov = new javax.swing.JButton();
-        oito = new javax.swing.JButton();
-        quatro = new javax.swing.JButton();
-        cinco = new javax.swing.JButton();
-        seis = new javax.swing.JButton();
+        zero = new javax.swing.JButton();
+        dot = new javax.swing.JButton();
         um = new javax.swing.JButton();
         dois = new javax.swing.JButton();
         tres = new javax.swing.JButton();
-        zero = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
+        quatro = new javax.swing.JButton();
+        cinco = new javax.swing.JButton();
+        seis = new javax.swing.JButton();
+        sete = new javax.swing.JButton();
+        oito = new javax.swing.JButton();
+        nov = new javax.swing.JButton();
         C = new javax.swing.JButton();
         CE = new javax.swing.JButton();
         sum = new javax.swing.JButton();
@@ -50,30 +54,15 @@ public class Formulario extends javax.swing.JFrame {
         jButton22.setText("jButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        txtResultado.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        txtResultado.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         txtResultado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtResultadoActionPerformed(evt);
             }
         });
-
-        sete.setText("7");
-
-        nov.setText("9");
-
-        oito.setText("8");
-
-        quatro.setText("4");
-
-        cinco.setText("5");
-
-        seis.setText("6");
-
-        um.setText("1");
-
-        dois.setText("2");
-
-        tres.setText("3");
 
         zero.setText("0");
         zero.addActionListener(new java.awt.event.ActionListener() {
@@ -82,21 +71,124 @@ public class Formulario extends javax.swing.JFrame {
             }
         });
 
-        jButton15.setText(".");
+        dot.setText(".");
+        dot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dotActionPerformed(evt);
+            }
+        });
+
+        um.setText("1");
+        um.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                umActionPerformed(evt);
+            }
+        });
+
+        dois.setText("2");
+        dois.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                doisActionPerformed(evt);
+            }
+        });
+
+        tres.setText("3");
+        tres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tresActionPerformed(evt);
+            }
+        });
+
+        quatro.setText("4");
+        quatro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quatroActionPerformed(evt);
+            }
+        });
+
+        cinco.setText("5");
+        cinco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cincoActionPerformed(evt);
+            }
+        });
+
+        seis.setText("6");
+        seis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seisActionPerformed(evt);
+            }
+        });
+
+        sete.setText("7");
+        sete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seteActionPerformed(evt);
+            }
+        });
+
+        oito.setText("8");
+        oito.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                oitoActionPerformed(evt);
+            }
+        });
+
+        nov.setText("9");
+        nov.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                novActionPerformed(evt);
+            }
+        });
 
         C.setText("C");
+        C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CActionPerformed(evt);
+            }
+        });
 
         CE.setText("CE");
+        CE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CEActionPerformed(evt);
+            }
+        });
 
         sum.setText("+");
+        sum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sumActionPerformed(evt);
+            }
+        });
 
         minus.setText("-");
+        minus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                minusActionPerformed(evt);
+            }
+        });
 
         vezes.setText("*");
+        vezes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                vezesActionPerformed(evt);
+            }
+        });
 
         igual.setText("=");
+        igual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                igualActionPerformed(evt);
+            }
+        });
 
         div.setText("/");
+        div.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                divActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -118,7 +210,7 @@ public class Formulario extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(tres, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(dot, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(quatro, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -179,7 +271,7 @@ public class Formulario extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(zero, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dot, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(div, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(igual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(22, 22, 22))
@@ -197,6 +289,99 @@ public class Formulario extends javax.swing.JFrame {
         txtResultado.setText(txtResultado.getText()+"0");
     }//GEN-LAST:event_zeroActionPerformed
 
+    private void umActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_umActionPerformed
+        txtResultado.setText(txtResultado.getText()+"1");        // TODO add your handling code here:
+    }//GEN-LAST:event_umActionPerformed
+
+    private void doisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doisActionPerformed
+        txtResultado.setText(txtResultado.getText()+"2");        // TODO add your handling code here:
+    }//GEN-LAST:event_doisActionPerformed
+
+    private void tresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tresActionPerformed
+        txtResultado.setText(txtResultado.getText()+"3");           // TODO add your handling code here:
+    }//GEN-LAST:event_tresActionPerformed
+
+    private void quatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quatroActionPerformed
+        txtResultado.setText(txtResultado.getText()+"4");           // TODO add your handling code here:
+    }//GEN-LAST:event_quatroActionPerformed
+
+    private void cincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cincoActionPerformed
+        txtResultado.setText(txtResultado.getText()+"5");           // TODO add your handling code here:
+    }//GEN-LAST:event_cincoActionPerformed
+
+    private void seisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seisActionPerformed
+        txtResultado.setText(txtResultado.getText()+"6");           // TODO add your handling code here:
+    }//GEN-LAST:event_seisActionPerformed
+
+    private void seteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seteActionPerformed
+        txtResultado.setText(txtResultado.getText()+"7");           // TODO add your handling code here:
+    }//GEN-LAST:event_seteActionPerformed
+
+    private void oitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oitoActionPerformed
+        txtResultado.setText(txtResultado.getText()+"8");           // TODO add your handling code here:
+    }//GEN-LAST:event_oitoActionPerformed
+
+    private void novActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_novActionPerformed
+        txtResultado.setText(txtResultado.getText()+"9");           // TODO add your handling code here:
+    }//GEN-LAST:event_novActionPerformed
+
+    private void dotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dotActionPerformed
+        txtResultado.setText(txtResultado.getText()+".");       // TODO add your handling code here:
+    }//GEN-LAST:event_dotActionPerformed
+
+    private void CEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CEActionPerformed
+        txtResultado.setText("");      // TODO add your handling code here:
+    }//GEN-LAST:event_CEActionPerformed
+
+    private void igualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_igualActionPerformed
+        valor2 = Double.parseDouble(txtResultado.getText());
+        if(sinal == "soma"){
+            txtResultado.setText(String.valueOf(valor1+valor2));
+        }
+        
+        if(sinal == "menos"){
+            txtResultado.setText(String.valueOf(valor1-valor2));
+        }
+        
+        if(sinal == "div"){
+            txtResultado.setText(String.valueOf(valor1/valor2));
+        }
+        
+        if(sinal == "mult"){
+            txtResultado.setText(String.valueOf(valor1*valor2));
+        }
+    }//GEN-LAST:event_igualActionPerformed
+
+    private void sumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sumActionPerformed
+        valor1 = Double.valueOf( txtResultado.getText() );
+        txtResultado.setText("");
+        sinal = "soma";
+    }//GEN-LAST:event_sumActionPerformed
+
+    private void minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusActionPerformed
+        valor1 = Double.parseDouble(txtResultado.getText());
+        txtResultado.setText("");
+        sinal = "menos";
+    }//GEN-LAST:event_minusActionPerformed
+
+    private void vezesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vezesActionPerformed
+        valor1 = Double.parseDouble(txtResultado.getText());
+        txtResultado.setText("");
+        sinal = "mult";    // TODO add your handling code here:
+    }//GEN-LAST:event_vezesActionPerformed
+
+    private void divActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divActionPerformed
+        valor1 = Double.parseDouble(txtResultado.getText());
+        txtResultado.setText("");
+        sinal = "div";  // TODO add your handling code here:
+    }//GEN-LAST:event_divActionPerformed
+
+    private void CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CActionPerformed
+        valor1 = null;
+        valor2 = null;
+        txtResultado.setText("");
+    }//GEN-LAST:event_CActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -204,7 +389,7 @@ public class Formulario extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -238,8 +423,8 @@ public class Formulario extends javax.swing.JFrame {
     private javax.swing.JButton cinco;
     private javax.swing.JButton div;
     private javax.swing.JButton dois;
+    private javax.swing.JButton dot;
     private javax.swing.JButton igual;
-    private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton minus;
     private javax.swing.JButton nov;
