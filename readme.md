@@ -1,17 +1,25 @@
-<h1 align="center"> Calc.io // Calculadora Simples :calling::calling: </h1>
+<h1 align="center"> 
+Calc.io // Calculadora Simples :calling: :calling: </h1>
 
-## Descrição do Projeto
-<p align="justify"> ![The Calc.io](https://i.ibb.co/5TxCvgP/Design-sem-nome.png "Calc.io")
-</p>
------
-#
-## Projeto: Calculadora Simples :calling::calling:
+![The Calc.io](https://i.ibb.co/5TxCvgP/Design-sem-nome.png)
+## Descrição do Projeto :memo:
 
-### Ou melhor, Calc.io!
-#
+   Fiz essa calculadora que chamo de _Calc io_ como meu primeiro projeto Java, colocando em prática após de um mês interrupto de estudo.
+    
+   Utilizei _Swing_ para montar a calculadora no NetBeans, a ferramenta foi intuitiva e de fácil aprendizado que facilitou criar o _GUI_.
+    
+## Funções :wrench:
+
+- [X] Adição
+- [X] Subtração
+- [X] Multiplicação
+- [X] Divisão
+- [ ] Potência
+- [ ] Parênteses 
+
+## Como Ficou:
+
+![Alt Text](https://i.ibb.co/xhwbCt2/calcos.gif)
 ---
-    Fiz essa calculadora que chamo de _Calc.io_ como meu primeiro projeto Java com o intuito de aprender e colocar em prática após de um mês interrupto de estudo.
-    
-    Nesse projeto utilizei _Swing_ para montar a calculadora no NetBeans, a ferramenta é intuitiva que facilitou criar o _GUI_.
-    
-----
+### Vou aprendendo e subindo aqui ;)
+> Status do Projeto: Em desenvolvimento :seedling:
