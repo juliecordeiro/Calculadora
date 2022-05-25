@@ -1,6 +1,8 @@
-## Descrição do Projeto
-<p align="justify"> ![The Calc.io](https://i.ibb.co/5TxCvgP/Design-sem-nome.png "Calc.io") </p>
+<h1 align="center"> Calc.io // Calculadora Simples :calling::calling: </h1>
 
+## Descrição do Projeto
+<p align="justify"> ![The Calc.io](https://i.ibb.co/5TxCvgP/Design-sem-nome.png "Calc.io")
+</p>
 -----
 #
 ## Projeto: Calculadora Simples :calling::calling:
