@@ -1,9 +1,7 @@
 <h1 align="center"> 
 Calc.io // Calculadora Simples :calling: :calling: </h1>
 
-
-
-<center>![The Calc.io](https://i.ibb.co/5TxCvgP/Design-sem-nome.png)</center>
+![The Calcio](https://i.ibb.co/5TxCvgP/Design-sem-nome.png){ width="420" height="445" style="display: block; margin: 0 auto" }
 
 ## Descrição do Projeto :memo:
 
