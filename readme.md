@@ -1,7 +1,10 @@
 <h1 align="center"> 
 Calc.io // Calculadora Simples :calling: :calling: </h1>
 
-![The Calc.io](https://i.ibb.co/5TxCvgP/Design-sem-nome.png)
+
+
+<center>![The Calc.io](https://i.ibb.co/5TxCvgP/Design-sem-nome.png)</center>
+
 ## Descrição do Projeto :memo:
 
    Fiz essa calculadora que chamo de _Calc io_ como meu primeiro projeto Java, colocando em prática após de um mês interrupto de estudo.
